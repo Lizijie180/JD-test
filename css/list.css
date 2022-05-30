@@ -1,0 +1,387 @@
+/* body{
+    background-color: rgb(246, 246, 246);
+} */
+
+.searchBox{
+    height: 120px;
+    background-color: #fff;
+}
+
+.searchBox>.searchAll{
+    width: 1190px;
+    height: 120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.searchBox>.searchAll>.searchLe{
+    width: 250px;
+    display: flex;
+    align-items: center;
+}
+
+.searchBox>.searchAll>.searchLe a{
+    margin-right: 30px;
+}
+
+.searchBox>.searchAll>.searchLe span{
+    font-size: 22px;
+    color: #666;
+    margin-top: 25px;
+}
+
+.searchBox>.searchAll>.search{
+    width: 500px;
+    height: 70px;
+}
+
+.searchBox>.searchAll>.search>form{
+    margin-top: 10px;
+    width: 500px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 2px solid rgb(225, 37, 27);
+    display: flex;
+    align-items: center;
+    border-right: 0;
+    margin-bottom: 5px;
+}
+
+.searchBox>.searchAll>.search>form>input{
+    height: 24px;
+    text-indent: 10px;
+    width: 460px;
+    border: 0;
+}
+
+.searchBox>.searchAll>.search>form>button{
+    width: 70px;
+    height: 40px;
+    background-color: rgb(225, 37, 27);
+    color: white;
+    font-size: 16px;
+    border: 0;
+    cursor: pointer;
+}
+
+.searchBox>.searchAll>.search>.ideaText{
+    height: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.searchBox>.searchAll>.search>.ideaText>li{
+    margin-right: 5px;
+    color: #999;
+    cursor: pointer;
+}
+
+.searchBox>.searchAll>.search>.ideaText>li:hover{
+    color: rgb(225, 37, 27);
+}
+
+.searchBox>.searchAll>.cart{
+    margin-right: 30px;
+    height: 32px;
+    width: 120px;
+    border: 1px solid rgb(214, 210, 210);
+    border-radius: 2px;
+    text-align: center;
+    line-height: 32px;
+    color: rgb(225, 37, 27);
+    position: relative;
+    font-size: 12px;
+    background-color: rgb(249, 249, 249);
+}
+
+.searchBox .searchAll>.cart>span{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.searchBox .searchAll>.cart>.poaGouWu{
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    background-color: rgb(225, 37, 27);
+    color: white;
+    font-size: 12px;
+    line-height: 14px;
+    border-radius: 6px;
+    top: 1px;
+    left: 100px;
+}
+
+/* 导航 */
+.nav{
+    height: 44px;
+    background-color: #fff;
+    border-bottom: 2px solid #e01222;
+}
+
+.nav>div{
+    width: 1190px;
+    margin: 0 auto;
+}
+
+.nav ul{
+    width: 416px;
+    height: 44px;
+    display: flex;
+}
+
+.nav ul>li{
+    height: 44px;
+    line-height: 44px;
+    font-size: 20px;
+    font-weight: 700;
+    width: 100px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.nav ul>li:hover{
+    color: rgb(225, 37, 27);
+}
+
+.nav ul>li.li1{
+    color: white;
+    background-color: rgb(225, 37, 27);
+}
+
+
+
+
+/* 分类 */
+div.content{
+    border: 1px solid rgb(196, 190, 190);
+    margin: 20px auto;
+    padding: 10px;
+    padding-bottom: 0;
+    box-sizing: border-box;
+}
+
+div.content>.same1{
+    display: flex;  
+    margin-bottom: 8px;  
+    border-bottom: 1px dashed #999;
+}
+
+div.content>.last{
+    border-bottom: 0;
+}
+
+div.content>.same1>p{
+    font-size: 20px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: #666;
+    width: 70px;
+    margin-right: 20px;
+}
+
+div.content>.same1>ul{
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+div.content>.same1 li{
+    margin: 5px;
+    text-align: center;
+    font-size: 16px;
+    padding-left: 3px;
+    padding-right: 3px;
+    line-height: 24px;
+    cursor: pointer;
+    height: 24px;
+}
+
+div.content>.same1>ul>li:hover,
+div.content>.same1>ul>li.active{
+    background-color: rgb(225, 37, 27);
+    color: white;
+}
+
+div.content>.same1>input{
+    font-size: 20px;
+    height: 30px;
+    padding-left: 10px;
+}
+
+div.content>.same1>span{
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+
+
+
+
+/* 列表 */
+.list{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.list>li{
+    background-color: white;
+    border-radius: 10px;
+    width: 24%;
+    height: 360px;
+    margin-bottom: 17px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid rgb(228, 222, 222);
+}
+
+.list>li>img{
+    width: 200px;
+    height: 200px;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.list>li>img:hover+.title{
+    color: rgb(225, 37, 27);
+}
+
+.list>li>.title{
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    height: 45px;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 24px;
+    box-sizing: border-box;
+    /* 多行省略号 */
+    -webkit-line-clamp: 2;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.list>li>.title:hover{
+    color: rgb(225, 37, 27);
+}
+
+.list>li>.info{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 10px;
+    box-sizing: border-box;
+    border-top: 1px dashed rgb(228, 223, 223);
+}
+
+.list>li>.info>button{
+    width: 80px;
+    height: 40px;
+    color: white;
+    background-color: rgb(225, 37, 27);
+    cursor: pointer;
+    font-size: 14px;
+    border: 0;
+    cursor: pointer;
+    margin-right: 15px;
+}
+
+.list>li>.info>button:hover{
+    opacity: 0.9;
+}
+
+.list>li>.info>.price{
+    width: 80%;
+    margin-left: 20px;
+    margin-top: 5px;
+    display: flex;
+    position: relative;
+}
+
+.list>li>.info>.price .nowPrice{
+    font-size: 20px;
+    line-height: 24px;
+    color: rgb(225, 37, 27);
+    font-weight: 700;
+    margin-right: 5px;
+}
+
+.list>li>.info>.price .sale{
+    font-size: 14px;
+    background-color: rgb(225, 37, 27);
+    height: 24px;
+    line-height: 16px;
+    padding: 4px;
+    box-sizing: border-box;
+    color: white;
+    display: block;
+    float: right;
+    position: absolute;
+    top: -18px;
+    left: 95px;
+}
+
+
+/* 分页 */
+.page{
+    margin-top: 20px;
+    height: 40px;
+}
+
+.page>.same1{
+    width: 400px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    height: 40px;
+    justify-content: center;
+}
+
+.page>.same1 .left,
+.page>.same1 .right{
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    text-align: center;
+    background-color: rgb(225, 37, 27);
+    color: white;
+    font-size: 20px;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+
+div.page>.same1>span.disable{
+    cursor: not-allowed;
+    background-color: #ccc;
+}
+
+.page>.same1>.total{
+    font-size: 20px;
+}
+
+.page>.same1>.pageInput{
+    height: 30px;
+    width: 40px;
+    font-size: 16px;
+    text-align: center;
+    margin-right: 15px;
+}
+
+.page>.same1>button{
+    width: 45px;
+    height: 30px;
+    font-size: 16px;
+    background-color: rgb(225, 37, 27);
+    color: white;
+    cursor: pointer;
+    border: 0;
+}

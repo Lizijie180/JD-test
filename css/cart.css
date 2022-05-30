@@ -1,0 +1,316 @@
+/* 购物车 */
+body .center{
+    width: 990px;
+}
+
+.logoSearch{
+    height: 97px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.logoSearch>a{
+    width: 134px;
+    height: 50px;
+}
+
+.logoSearch>form{
+    margin-top: 10px;
+    width: 340px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    border: 2px solid rgb(225, 37, 27);
+}
+
+.logoSearch>form>input{
+    height: 32px;
+    width: 280px;
+    font-size: 16px;
+    line-height: 32px;
+    text-indent: 10px;
+    border: 0;
+}
+
+.logoSearch>form>button{
+    width: 60px;
+    border: 0;
+    height: 32px;
+    font-size: 16px;
+    background-color: rgb(225, 37, 27);
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.cartAll{
+    display: flex;
+    flex-direction: column;
+}
+
+body>.noShow{
+    display: none;
+}
+
+.cartAll>.goodsAll{
+    margin-top: 10px;
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: 700;
+    color: rgb(225, 37, 27);
+}
+
+.cartAll>.title{
+    height: 40px;
+    background-color: rgb(243, 243, 243);
+    display: flex;
+    justify-content: space-between;
+}
+
+.cartAll>.title>div{
+    display: flex;
+    height: 40px;
+    align-items: center;
+}
+
+.cartAll>.title>.titleLe{
+    width: 200px;
+}
+
+.cartAll>.title>.titleLe>input{
+    margin-left: 12px;
+    margin-right: 10px;
+}
+
+.cartAll>.title>.titleLe>input+span{
+    margin-right: 70px;
+}
+
+.cartAll>.title>.titleRi{
+    width: 360px;
+}
+
+.cartAll>.title>.titleRi>.one{
+    margin-right: 80px;
+}
+
+.cartAll>.title>.titleRi>.num{
+    margin-right: 100px;
+}
+
+.cartAll>.title>.titleRi>.oneNum{
+    margin-right: 40px;
+}
+
+.cartAll>.goodsCart{
+    width: 100%;
+    margin-top: 20px;
+}
+
+.cartAll>.goodsCart>li{
+    height: 110px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border: 1px solid #dbdbdb;
+}
+
+.cartAll>.goodsCart>li>input{
+    margin-left: 10px;
+}
+
+.cartAll>.goodsCart>li img{
+    width: 80px;
+    height: 80px;
+    margin-left: 10px;
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.cartAll>.goodsCart>li>.titleGoods{
+    width: 330px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 22px;
+    margin-right: 125px;
+    cursor: pointer;
+}
+
+.cartAll>.goodsCart>li>.titleGoods:hover{
+    color: rgb(225, 37, 27);
+}
+
+.cartAll>.goodsCart>li>.goodsOne{
+    font-size: 16px;
+    height: 20px;
+    line-height: 20px;
+    width: 80px;
+    text-align: right;
+}
+
+.cartAll>.goodsCart>li>.goodsNum{
+    width: 80px;
+    display: flex;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 40px;
+    margin-right: 25px;
+    font-size: 14px;
+    border: 1px solid #dbdbdb;
+}
+
+.cartAll>.goodsCart>li>.goodsNum>button{
+    height: 20px;
+    width: 20px;
+    border: 0;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.cartAll>.goodsCart>li>.goodsNum>button.disable{
+    cursor: not-allowed;
+}
+
+.cartAll>.goodsCart>li>.goodsNum>input{
+    width: 40px;
+    border: 0;
+    text-align: center;
+    border-left: 1px solid #dbdbdb;
+    border-right: 1px solid #dbdbdb;
+}
+
+.cartAll>.goodsCart>li>.goodsSum{
+    width: 80px;
+    margin-right: 25px;
+    text-align: right;
+    height: 20px;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.cartAll>.goodsCart>li>.delGoods{
+    height: 20px;
+    line-height: 20px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.cartAll>.goodsCart>li>.delGoods:hover{
+    color: rgb(225, 37, 27);
+}
+
+.goPay{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    border: 1px solid #dbdbdb;
+}
+
+.goPay>.goPayLe{
+    display: flex;
+    height: 40px;
+    align-items: center;
+    margin-left: 30px;
+    width: 300px;
+    font-size: 12px;
+}
+
+.goPay>.goPayLe>span.delCheck{
+    color: rgb(102, 102, 102);
+    line-height: 40px;
+    margin-right: 30px;
+    cursor: pointer;
+}
+
+.goPay>.goPayLe>span.delCheck:hover{
+    color: rgb(225, 37, 27);
+}
+
+.goPay>.goPayLe>span.delAll{
+    line-height: 40px;
+    color: rgb(43, 41, 41);
+    cursor: pointer;
+}
+
+.goPay>.goPayLe>span.delAll:hover{
+    color: rgb(225, 37, 27);
+}
+
+.goPay>.goPayRi{
+    width: 400px;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.goPay>.goPayRi>.checkGoods{
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    color: rgb(117, 115, 115);
+}
+
+.goPay>.goPayRi>.checkGoods>span{
+    color: rgb(225, 37, 27);
+    font-weight: 700;
+}
+
+.goPay>.goPayRi>.sumGoods{
+    height: 40px;
+    line-height: 40px;
+    font-size: 12px;
+    color: rgb(117, 115, 115);
+}
+
+.goPay>.goPayRi>.sumGoods>b{
+    color: rgb(225, 37, 27);
+    font-size: 14px;
+}
+
+.goPay>.goPayRi>button{
+    cursor: pointer;
+    border: 0;
+    background-color: rgb(230,67,71);
+    color: white;
+    font-size: 18px;
+    height: 50px;
+    font-weight: 700;
+    line-height: 40px;
+    width: 90px;
+}
+
+.noGoods{
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.noGoods>.bcc{
+    width: 75px;
+    height: 60px;
+    background: url(../images/noGoodsCart.png) no-repeat;
+    margin-right: 20px;
+}
+
+.noGoods>.noGoodsText{
+    height: 36px;
+    display: flex;
+    width: 250px;
+    justify-content: space-between;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.noGoods>.noGoodsText>a{
+    color: rgb(0, 94, 167);
+    font-weight: 700;
+}

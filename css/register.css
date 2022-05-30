@@ -1,0 +1,176 @@
+.up{
+    height: 80px;
+    box-shadow: 0px 2px 5px 2px rgb(240, 237, 237);
+}
+
+.header{
+    width: 900px;
+    height: 80px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header>.logoImg{
+    width: 280px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header>.logoImg span{
+    font-size: 22px;
+    margin-top: 10px;
+}
+
+.header>.riText{
+    margin-top: 10px;
+    font-size: 16px;
+}
+
+.header>.riText span{
+    color: #999;
+}
+
+.header>.riText>a{
+    color: rgb(240, 27, 27);
+}
+
+.header>.riText>a:hover{
+    text-decoration: underline;
+}
+
+/* 表单 */
+/* 背景登录 */
+.banner{
+    height: 475px;
+    background-color: #e93854;
+}
+
+.banner>.bannerImg{
+    height: 475px;
+    width: 990px;
+    margin: 0 auto;
+    background: url(../images/LoginBanner.png) no-repeat 0px 0px;
+}
+
+.banner>.bannerImg>.loginBox{
+    width: 346px;
+    height: 440px;
+    float: right;
+    background-color: white;
+    margin-top: 10px;
+    /* text-align: center; */
+}
+
+.banner>.bannerImg>.loginBox>form{
+    height: 440px;
+    border-bottom: 1px solid #f4f4f4;
+    padding-top: 50px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.banner>.bannerImg>.loginBox>form>.noLogo{
+    position: absolute;
+    width: 306px;
+    height: 40px;
+    line-height: 24px;
+    top: 8px;
+    left: 20px;
+    background-color: #ffebeb;
+    align-items: center;
+    color: rgb(225, 37, 27);
+    display: none;
+}
+
+.banner>.bannerImg>.loginBox>form>.noLogo>div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 18px;
+    font-size: 12px;
+    height: 40px;
+    width: 306px;
+}
+
+.banner>.bannerImg>.loginBox>form>label{
+    display: block;
+    height: 38px;
+    width: 325px;
+    margin: 0 auto;
+    border: 1px solid #bdbdbd;
+    margin-bottom: 35px;
+}
+
+.banner>.bannerImg>.loginBox>form>label>div{
+    padding-left: 3px;
+    padding-right: 3px;
+    box-sizing: border-box;
+    width: 74px;
+    height: 38px;
+    float: left;
+    font-size: 16px;
+    line-height: 38px;
+    text-align-last: justify;
+    border-right: 1px solid #bdbdbd;
+}
+
+.banner>.bannerImg>.loginBox>form>label>input{
+    border: 0;
+    line-height: 38px;
+    font-size: 14px;
+    text-indent: 10px;
+    width: 250px;
+    float: left;
+}
+
+.banner>.bannerImg>.loginBox>form>button{
+    width: 304px;
+    display: block;
+    height: 31px;
+    margin: 0 auto;
+    font-size: 20px;
+    line-height: 31px;
+    border: 1px solid #e85356;
+    background-color: #e4393c;
+    color: white;
+    cursor: pointer;
+}
+
+
+/* 底部 */
+
+.footer{
+    border-top: 1px solid #e9e8e8;
+    height: 86px;
+    width: 990px;
+    margin: 0 auto;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #666;
+}
+
+.footer>ul{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.footer>ul li.liText{
+    margin-left: 10px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.footer>ul li.liText:hover{
+    color: rgb(225, 37, 27);
+    text-decoration: underline;
+}

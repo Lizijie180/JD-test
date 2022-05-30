@@ -1,0 +1,291 @@
+.header{
+    background-color: #e3e4e5;
+    height: 40px;
+}
+
+.header>.center{
+    height: 40px;
+    display: flex;
+    color: #999;
+    font-size: 14px;
+    justify-content: space-between;
+}
+
+.headerLe{
+    padding: 0 8px;
+    position: relative;
+}
+
+.headerLe>.nowCity{
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.headerLe:hover{
+    background-color: white;
+}
+
+.headerLe .nowCity:hover span{
+    color: rgb(225, 37, 27);
+}
+
+.headerLe>.nowCity>img{
+    width: 16px;
+    height: 16px;
+    margin-right: 4px;
+}
+
+.headerLe .hoverCity{
+    display: none;
+    border: 1px solid rgb(228, 224, 224);
+    border-top: 0;
+    position: absolute;
+    top: 40px;
+    left: -1px;
+    width: 370px;
+    height: 500px;
+    background-color: white;
+    z-index: 99;
+}
+
+.headerLe:hover .hoverCity{
+    display: block;
+}
+
+.headerLe .hoverCity ul{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px 0;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.headerLe .hoverCity ul>li{
+    width: 45px;
+    height: 20px;
+    /* background-color: red; */
+    text-align: center;
+    padding: 5px;
+    margin: 5px 10px;
+    line-height: 20px;
+}
+
+.headerLe .hoverCity ul>li:hover{
+    cursor: pointer;
+    background-color: rgb(238, 235, 235);
+    color: rgb(225, 37, 27);
+}
+
+.headerLe .hoverCity ul>li.active{
+    background-color: rgb(225, 37, 27);
+    color: white;
+}
+
+.headerRi{
+    display: flex;
+    align-items: center;
+    height: 40px;
+}
+
+.header>.center>.headerRi>li.no_login,
+.header>.center>.headerRi>li.true_login{
+    display: none;
+}
+
+.header>.center>.headerRi>li.active{
+    display: flex;
+}
+
+.headerRi>li.true_login:hover{
+    color: rgb(225, 37, 27);
+}
+
+.headerRi>li.true_login>span{
+    width: 44px;
+    margin-left: 5px;
+    height: 15px;
+    border-radius: 5px;
+    text-align: center;
+    line-height: 18px;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: rgb(211, 209, 199);
+}
+
+.headerRi>li .redText{
+    color: rgb(225, 37, 27)
+}
+
+.headerRi>li>img{
+    margin-left: 5px;
+    margin-top: 3px;
+    width: 12px;
+    height: 12px;
+}
+
+.headerRi>li:not(.lineLi){
+    display: flex;
+    align-items: center;
+    padding: 0px 6px;
+    height: 40px;
+}
+
+.headerRi>.lineLi{
+    width: 1px;
+    height: 12px;
+    background-color: #999;
+    margin: 0px 5px;
+}
+
+.headerRi>li.reaHeaderLi{
+    position: relative;
+}
+
+.headerRi>li.reaHeaderLi:hover{
+    background-color: white;
+}
+
+.headerRi>li>.poaLi{
+    position: absolute;
+    top: 40px;
+    border: 1px solid rgb(228, 224, 224);
+    border-top: 0;
+    background-color: white;
+    z-index: 99;
+    display: none;
+}
+
+.headerRi>li>.poaLi>ul>li{
+    cursor: pointer;
+}
+
+.headerRi>li>.poaMyJD{
+    left: -1px;
+    width: 320px;
+    height: 240px;
+}
+
+.headerRi>li>.poaMyJD>ul{
+    display: flex;
+    padding: 10px;
+    height: 130px;
+    flex-wrap: wrap;
+}
+
+.headerRi>li>.poaMyJD>ul>li{
+    width: 100px;
+    margin-right: 20px;
+}
+
+.headerRi>li>.poaLi>ul>li:hover{
+    color: rgb(225, 37, 27);
+}
+
+.headerRi>li>.poaMyJD>ul+ul{
+    height: 80px;
+}
+
+.headerRi>li>.goShop{
+    left: -1px;
+    width: 200px;
+    height: 180px;
+}
+
+.headerRi>li>.goShop>ul{
+    display: flex;
+    padding: 14px;
+    height: 120px;
+    flex-wrap: wrap;
+}
+
+.headerRi>li>.goShop>ul>li{
+    margin-right: 15px;
+    margin-bottom: 15px;
+}
+
+.headerRi>li>.userService{
+    left: -1px;
+    width: 180px;
+    height: 310px;
+}
+
+.headerRi>li>.userService>ul{
+    display: flex;
+    padding: 14px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.headerRi>li>.userService>ul>li{
+    margin-bottom: 15px;
+}
+
+.headerRi>li>.goNav{
+    right: -40px;
+    width: 1100px;
+    height: 240px;
+}
+
+.headerRi>li>.goNav>ul{
+    display: flex;
+    padding: 14px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.headerRi>li>.goNav>ul>li{
+    margin-bottom: 15px;
+    width: 200px;
+    height: 220px;
+    border-right: 1px solid rgb(212, 208, 208);
+    text-align: center;
+}
+
+.headerRi>li>.phoneJD{
+    left: -60px;
+    width: 220px;
+    height: 630px;
+}
+
+.headerRi>li>.phoneJD>ul{
+    box-sizing: border-box;
+    padding: 14px;
+}
+
+.headerRi>li>.phoneJD>ul>li{
+    display: flex;
+    margin-bottom: 15px;
+    color: black;
+    height: 110px;
+    border-bottom: 1px solid #e3e4e5;
+}
+
+.headerRi>li>.phoneJD>ul>li>img{
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.headerRi>.reaHeaderLi:hover .poaMyJD{
+    display: block;
+}
+
+.headerRi>.reaHeaderLi:hover .goShop{
+    display: block;
+}
+
+.headerRi>.reaHeaderLi:hover .userService{
+    display: block;
+}
+
+.headerRi>.reaHeaderLi:hover .goNav{
+    display: block;
+}
+
+.headerRi>.reaHeaderLi:hover .phoneJD{
+    display: block;
+}

@@ -1,0 +1,143 @@
+/* 底部 */
+.footer{
+    border-bottom: 1px solid #dedede;
+}
+
+.footer>ul{
+    display: flex;
+    height: 102px;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer>ul>li{
+    height: 102px;
+    width: 297px;
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    line-height: 42px;
+}
+
+.footer>ul div{
+    width: 36px;
+    height: 42px;
+    margin-right: 10px;
+    
+}
+
+.footer>ul div.d1{
+    background: url(../images/IndexFooter.png) no-repeat 0 -192px;
+}
+
+.footer>ul div.d2{
+    background: url(../images/IndexFooter.png) no-repeat -41px -192px;
+}
+
+.footer>ul div.d3{
+    background: url(../images/IndexFooter.png) no-repeat -82px -192px;
+}
+
+.footer>ul div.d4{
+    background: url(../images/IndexFooter.png) no-repeat -123px -192px;
+}
+
+
+/* 尾部 */
+.down{
+    height: 160px;
+    display: flex;
+    padding: 20px 0;
+    justify-content: space-between;
+    color: #666;
+    font-size: 14px;
+    border-bottom: 1px solid #dedede;
+}
+
+.down h4{
+    margin-bottom: 15px;
+}
+
+.down li{
+    width: 198px;
+    height: 22px;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.down li:hover{
+    color: rgb(225, 37, 27);
+}
+
+.down p+a{
+    margin-top: 5px;
+    color: #666;
+    display: block;
+    text-align: right;
+}
+
+.down p+a:hover{
+    color: rgb(225, 37, 27);
+}
+
+.end{
+    text-align: center;
+    height: 266px;
+    padding: 15px 0;
+}
+
+.end>p{
+    margin-bottom: 20px;
+}
+
+.end>p a{
+    color: #666;
+}
+
+.end span{
+    color: #ccc;
+    margin: 0 8px;
+}
+
+.end>div.smallText{
+    color: #999;
+}
+
+.end>div.smallText>p{
+    margin-bottom: 10px;
+}
+
+.end .smallImg{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.end .smallImg a{
+    width: 105px;
+    height: 32px;
+}
+
+.end .smallImg .a1{
+    background: url(../images/IndexFooter.png) no-repeat -205px -111px;
+}
+
+.end .smallImg .a2{
+    background: url(../images/IndexFooter.png) no-repeat -205px -74px;
+}
+
+.end .smallImg .a3{
+    background: url(../images/IndexFooter.png) no-repeat -205px -37px;
+}
+
+.end .smallImg .a4{
+    background: url(../images/IndexFooter.png) no-repeat -205px 0px;
+}
+
+.end .smallImg .a5{
+    background: url(../images/IndexFooter.png) no-repeat 0px -155px;
+}
+
+.end .smallImg .a6{
+    background: url(../images/IndexFooter.png) no-repeat -205px -148px;
+}

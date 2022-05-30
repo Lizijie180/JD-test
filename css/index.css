@@ -1,0 +1,737 @@
+html{
+    background-color: rgb(244, 244, 244);
+}
+
+.searchBox{
+    height: 140px;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+}
+
+.searchBox>.center{
+    height: 140px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* 搜索框模块的左右图片 */
+.searchBox>.center>.searchLe img,
+.searchBox>.center>.searchRi img{
+    width: 190px;
+    height: 120px;
+    cursor: pointer;
+}
+
+.searchBox .searchCen{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* 搜索框 */
+.searchBox .searchCen>.searchCenTop{
+    display: flex;
+    justify-content: space-between;
+    align-items:stretch;
+    margin-top: 5px;
+}
+
+.searchBox .searchCen>.searchCenTop>form{
+    position: relative;
+    margin-right: 20px;
+    z-index: 0;
+}
+
+.searchBox .searchCen>.searchCenTop>form>input{
+    width: 550px;
+    border: 2px solid rgb(225, 37, 27);
+    padding: 8px 15px;
+    font-size: 12px;
+    box-sizing: border-box;
+    color: #999;
+}
+
+.searchBox .searchCen>.searchCenTop>form>span{
+    position: absolute;
+    right: 80px;
+    top: 8px;
+}
+
+.searchBox .searchCen>.searchCenTop>form>span>i{
+    font-size: 18px;
+}
+
+.searchBox .searchCen>.searchCenTop>form>span>i:hover{
+    cursor: pointer;
+    color: rgb(225, 37, 27);
+}
+
+.searchBox .searchCen>.searchCenTop>form>button{
+    position: absolute;
+    width: 60px;
+    height: 32px;
+    right: 0px;
+    background-color: rgb(225, 37, 27);
+    color: white;
+    font-weight: 700;
+    border: 0;
+    cursor: pointer;
+    line-height: 1;
+}
+
+.searchBox .searchCen>.searchCenTop>form>button>i{
+    display: block;
+    margin-top: 3px;
+    font-size: 14px;
+}
+
+.searchBox .searchCen>.searchCenTop>div{
+    height: 32px;
+    width: 120px;
+    border: 1px solid rgb(214, 210, 210);
+    border-radius: 2px;
+    text-align: center;
+    line-height: 32px;
+    color: rgb(225, 37, 27);
+    position: relative;
+    font-size: 12px;
+}
+
+.searchBox .searchCen>.searchCenTop>div>span{
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.searchBox .searchCen>.searchCenTop>div>.poaGouWu{
+    position: absolute;
+    width: 16px;
+    height: 14px;
+    background-color: rgb(225, 37, 27);
+    color: white;
+    font-size: 12px;
+    line-height: 14px;
+    border-radius: 6px;
+    top: 1px;
+    left: 22px;
+}
+
+/* 搜索框下的推荐词 */
+.searchBox .searchCen>.searchCen2{
+    margin-top: 8px;
+    align-self:flex-start;
+    margin-left: 60px;
+}
+
+.searchBox .searchCen>.searchCen2>ul{
+    display: flex;
+}
+
+.searchBox .searchCen>.searchCen2>ul>li{
+    margin-right: 10px;
+    font-size: 12px;
+    cursor: pointer;
+    color: #999;
+}
+
+.searchBox .searchCen>.searchCen2>ul>li.active{
+    color: rgb(225, 37, 27);
+}
+
+.searchBox .searchCen>.searchCen2>ul>li:hover{
+    color: rgb(225, 37, 27);
+}
+
+/* 搜索框的导航 */
+.searchBox .searchCen>.searchDown{
+    align-self:flex-start;
+    margin-left: 20px;
+    margin-top: 30px;
+    font-size: 14px;
+}
+
+.searchBox .searchCen>.searchDown>ul{
+    display: flex;
+}
+
+.searchBox .searchCen>.searchDown>ul>li{
+    margin-right: 20px;
+    color: rgb(88, 82, 82);
+    cursor: pointer;
+}
+
+.searchBox .searchCen>.searchDown>ul>li>a{
+    color: rgb(225, 37, 27);
+}
+
+.searchBox .searchCen>.searchDown>ul>li:hover{
+    color: rgb(225, 37, 27);
+}
+
+.searchBox .searchCen>.searchDown>ul>li.active{
+    font-weight: 700;
+    color: rgb(225, 37, 27);
+}
+
+
+
+
+/* 大图 */
+.banner{
+    height: 710px;
+    background: url(../images/bannerIndex.webp) no-repeat 50% 0px;
+    background-color: rgb(244, 244, 244);
+}
+
+.banner>.center{
+    padding-top: 8px;
+    display: flex;
+    justify-content: space-between;
+}
+
+/* 分类 */
+.banner>.center>.classify{
+    background-color: white;
+    position: relative;
+    width: 190px;
+    height: 460px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.banner>.center>.classify>ul{
+    width: 190px;
+    height: 440px;
+}
+
+.banner>.center>.classify>ul>li{
+    box-sizing: border-box;
+    padding-left: 18px;
+    height: 25px;
+    width: 190px;
+    color: #333;
+    line-height: 25px;
+    font-size: 14px;
+}
+
+.banner>.center>.classify>ul>li:hover{
+    background-color: rgba(216, 201, 201,0.7);
+}
+
+.banner>.center>.classify>ul>li>a{
+    color: #333;
+}
+
+.banner>.center>.classify>ul>li>a:hover{
+    color: rgb(225, 37, 27);
+}
+
+.banner>.center>.classify>.classifyPoa{
+    position:absolute;
+    width: 1000px;
+    height: 480px;
+    background-color: white;
+    top: 0;
+    left: 190px;
+    z-index: 10;
+    border-left: 2px solid rgb(204, 185, 185);
+    box-shadow: 1px 2px 5px 3px rgb(158, 154, 154);
+    display: none;
+}
+
+.banner>.center>.classify:hover .classifyPoa{
+    display: block;
+}
+
+
+
+/* 大轮播图 */
+.banner>.center>.autoImg{
+    position: relative;
+    width: 590px;
+    height: 480px;
+    overflow: hidden;
+}
+
+.banner>.center>.autoImg>ul>li{
+    width: 590px;
+    height: 480px;
+    position: absolute;
+    opacity: 0;
+}
+
+.banner>.center>.autoImg>ul>li.go{
+    transition: opacity 1.5s;
+    opacity: 1;
+}
+
+.banner>.center>.autoImg img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.banner>.center>.autoImg>ol{
+    position: absolute;
+    display: flex;
+    top: 450px;
+    left: 30px;
+}
+
+.banner>.center>.autoImg>ol>li{
+    width: 10px;
+    height: 10px;
+    background-color: rgb(202, 195, 195);
+    border: 3px solid rgb(202, 195, 195);
+    border-radius: 50%;
+    z-index: 5;
+    margin-right: 5px;
+}
+
+.banner>.center>.autoImg>ol>li.changeW{
+    background-color: white;
+}
+
+.banner>.center>.autoImg>div{
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
+    text-indent: 10px;
+    line-height: 30px;
+    top: 210px;
+    color: white;
+    font-weight: 700;
+    background-color: rgba(94, 90, 90,0.3);
+    cursor: pointer;
+}
+
+.banner>.center>.autoImg>.rightImg{
+    text-indent: 6px;
+    right: -30px;
+}
+
+.banner>.center>.autoImg>.leftImg{
+    text-indent: 34px;
+    left: -30px;
+}
+
+.banner>.center>.grop-img{
+    width: 190px;
+    height: 480px;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner>.center>.grop-img>ul{
+    position: absolute;
+    width: 190px;
+    height: 480px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    opacity: 0;
+}
+
+.banner>.center>.grop-img>ul.goRi{
+    opacity: 1;
+    transition: opacity 1.5s;
+}
+
+.banner>.center>.grop-img>ul>li{
+    width: 190px;
+    height: 150px;
+}
+
+.banner>.center>.grop-img div{
+    position: absolute;
+    width: 50px;
+    height: 30px;
+    border-radius: 15px;
+    color: white;
+    line-height: 30px;
+    top: 210px;
+    font-weight: 700;
+    cursor: pointer;
+    background-color: rgba(185, 173, 172, 0.9);
+    opacity: 0;
+    transition: 0.2s;
+}
+
+.banner>.center>.grop-img>.rightImg{
+    text-indent: 8px;
+    right: -32px;
+}
+
+.banner>.center>.grop-img>.leftImg{
+    text-indent: 32px;
+    left: -30px;
+}
+
+.banner>.center>.grop-img>.show{
+    transition: opacity 1.5;
+    opacity: 1;
+}
+
+.banner>.center>.grop-img img{
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+
+
+/* 右侧信息 */
+.banner>.center>.messageRi{
+    width: 190px;
+    height: 480px;
+    background-color: white;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.banner>.center>.messageRi>.messageTop{
+    height: 98px;
+    border-bottom: 1px solid rgb(231, 222, 222);
+}
+
+.banner>.center>.messageRi>.messageTop>.messageTop_top{
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.banner>.center>.messageRi>.messageTop>.messageTop_top>.top_img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 15px;
+    cursor: pointer;
+}
+
+.messageRi>.messageTop>.messageTop_top>img{
+    width: 100%;
+    height: 100%;
+}
+
+.messageRi>.messageTop>.messageTop_top>.top_text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.messageRi>.messageTop>.messageTop_top>.top_text>span{
+    margin-bottom: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+.messageRi>.messageTop>.messageTop_top>.top_text>span.active{
+    display: block;
+}
+
+.messageRi>.messageTop>.messageTop_top>.top_text>span:hover{
+    color: rgb(225, 37, 27);
+}
+
+.messageRi>.messageTop>.messageTop_top>.top_text>ul{
+    display: none;
+}
+
+.messageRi>.messageTop>.messageTop_top>.top_text>ul.active{
+    display: flex;
+}
+
+.messageRi>.messageTop>.messageTop_top>.top_text>ul a{
+    color: #333;
+}
+
+.messageRi>.messageTop>.messageTop_top>.top_text>ul a:hover{
+    color: rgb(225, 37, 27);
+}
+
+.messageRi>.messageTop>.messageTop_top>.top_text>ul .loginLine{
+    width: 1px;
+    height: 14px;
+    background-color: rgb(88, 82, 82);
+    margin: 0 5px;
+}
+
+.messageRi>.messageTop>.messageTop_down{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.messageRi>.messageTop>.messageTop_down>div{
+    width: 70px;
+    height: 30px;
+    background-color: rgb(225, 37, 27);
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    margin-right: 5px;
+    border-radius: 15px;
+    font-size: 12px;
+    color: white;
+}
+
+.messageRi>.messageTop>.messageTop_down>div.btn2{
+    background-color: black;
+    color: rgb(177, 194, 115);
+}
+
+.messageRi>.messageTop>.messageTop_down>div.btn2:hover{
+    transition: 0.3s;
+    background-color: rgb(225, 37, 27);
+    color: white;
+}
+
+.messageRi>.messageCenter{
+    height: 135px;
+    padding: 10px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgb(224, 216, 216);
+    color: #333;
+}
+
+.messageRi>.messageCenter>h2{
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+.messageRi>.messageCenter li{
+    cursor: pointer;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-indent: 10px;
+}
+
+.messageRi>.messageCenter li:hover{
+    color: rgb(225, 37, 27);
+}
+
+.messageRi>.messageDown{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 10px;
+}
+
+.messageRi>.messageDown>div{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: black;
+    cursor: pointer;
+}
+
+.messageRi>.messageDown>div:hover{
+    color: rgb(225, 37, 27);
+}
+
+.messageRi>.messageDown>div img{
+    width: 28px;
+    height: 28px;
+    margin-bottom: 5px;
+}
+
+
+/* 定时器模块 */
+.timesBox{
+    height: 51px;
+    position: relative;
+}
+
+.timesBox>.times{
+    position: absolute;
+    height: 260px;
+    top: -209px;
+    left: 0;
+}
+
+.timesBox>.times>.timesSma{
+    float: left;
+    width: 190px;
+    height: 260px;
+    background: url(../images/timesIndex.png);
+    cursor: pointer;
+}
+
+.timesBox>.times>.timesSma>div{
+    color: white;
+    text-align: center;
+}
+
+.timesBox>.times>.timesSma>div.timesDiv1{
+    font-size: 30px;
+    font-weight: 900;
+    margin-top: 40px;
+    margin-bottom: 100px;
+}
+
+.timesBox>.times>.timesSma>div.timesDiv2>b{
+    font-size: 20px;
+}
+
+.timesBox>.times>.timesSma>div.timesDiv3{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.timesBox>.times>.timesSma>div.timesDiv3>span{
+    width: 30px;
+    height: 30px;
+    margin: 0px 5px;
+    font-size: 20px;
+    text-align: center;
+    line-height: 30px;
+    font-weight: 700;
+    background-color: black;
+}
+
+.timesBox>.times>.clickImg{
+    margin-left: 10px;
+    width:990px;
+    height: 260px;
+    float: left;
+    overflow: hidden;
+    background-color: #ffffff;
+    position: relative;
+}
+
+.timesBox>.times>.clickImg>ul{
+    width: 990px;
+    height: 260px;
+    position: absolute;
+    left: 0px;
+    display: flex;
+    transition: 20ms linear;
+}
+
+.timesBox>.times>.clickImg>ul>li{
+    flex-shrink: 0;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    height: 260px;
+    font-size: 14px;
+    color: #333;
+    cursor: pointer;
+    width: 200px;
+    background-color: white;
+}
+
+.timesBox>.times>.clickImg>ul img{
+    width: 170px;
+    height: 150px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.timesBox>.times>.clickImg>ul>li:hover{
+    color: rgb(225, 37, 27);
+}
+
+.timesBox>.times>.clickImg>ul>li:hover img{
+    transition: 0.3s;
+    opacity: 0.9;
+}
+
+.timesBox>.times>.clickImg>ul span{
+    width: 170px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* 小banner图 */
+.bannerSmBox{
+    margin-top: 30px;
+    height: 570px;
+    margin-bottom: 20px;
+}
+
+.bannerBox{
+    width: 1270px;
+    height: 560px;
+    background: url(../images/indexSmallBanner.webp);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+.bannerBox>a{
+    width: 1230px;
+    height: 100px;
+    margin-left: 22px;
+}
+
+.bannerSmBox>.bannerBox>ul{
+    width: 1180px;
+    height: 460px;
+    margin-left: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items:flex-start;
+}
+
+.bannerSmBox>.bannerBox>ul>li{
+    height: 200px;
+    width: 15.4%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.bannerSmBox>.bannerBox>ul>li>img{
+    width: 140px;
+    height: 160px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    transition: 0.2s;
+}
+
+.bannerSmBox>.bannerBox>ul>li:hover img{
+    opacity: 0.9;
+}
+
+.bannerSmBox>.bannerBox>ul>li>div{
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+    background-color: rgb(241, 225, 193);
+    height: 40px;
+    border-radius: 0 0 4px 4px;
+}
+
+.bannerSmBox>.bannerBox>ul>li>div>p{
+    width: 100%;
+    height: 40px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 40px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: rgb(225, 37, 27);
+    text-overflow: ellipsis;
+    font-weight: 700;
+}
